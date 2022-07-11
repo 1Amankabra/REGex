@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+
+
+header{
+    background: url("./download.jpg");
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-color: lightskyblue;
+    width: 1170px;
+    margin: auto;
+}
+
+.navbar{
+   background-color: rgb(130, 187, 234);
+    list-style: none;
+    margin-top: 10px;
+}
+
+.hero-heading{
+    margin-left: 3px;
+    margin: center;
+ }
+
+ .nav-option{
+    float: right;
+    margin: center;
+ }
+ .nav-option li{
+    display: inline-block;
+ }
+  .nav-option li link{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 15px;
+  }
