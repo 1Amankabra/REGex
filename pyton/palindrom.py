@@ -3,6 +3,10 @@ from tkinter.messagebox import YES
 
 s = input()
 def ispalindrom(s):
-  if( s == s[::-1]):
-    print(yes)
+  n = len(s)
+  if( s == s[:n:-1]):
+    print("yes")
+  else:
+   print("no")  
   
+ispalindrom(s)
