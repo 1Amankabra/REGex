@@ -1,4 +1,4 @@
-from tkinter.messagebox import YES
+
 
 
 s = input()
