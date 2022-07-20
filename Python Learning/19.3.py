@@ -25,6 +25,6 @@ while True:
             map_[stud[0]].add(stud[1])
         else:
             map_[stud[0]]={stud[1]}
-            map_[stud[0]].add(stud[1])
+            # map_[stud[0]].add(stud[1])
 print(map_)            
 

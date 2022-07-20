@@ -11,7 +11,7 @@ n = input('enter string')
 
 
 # for i in n:
-#     if i in map_:
+#     if i in map_: 
 #         map_[i]+=1
 #     else:
 #         map_[i] =1
