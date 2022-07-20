@@ -1,10 +1,10 @@
 
 
 function input() 
-mail=document.getElementById=mail
+password=document.getElementById=password
 { 
-var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
-if(inputtxt.value.match(decimal)) 
+var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{1,8}$/;
+if(input.value.match(decimal)) 
 { 
 alert('Correct, try another...')
 return true;
