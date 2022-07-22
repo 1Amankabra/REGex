@@ -18,4 +18,5 @@ class webseries:
 
 web_1 = webseries("games of throns",1 ,1)
 web_2 = webseries("hatim",1,2)
-print(web_1.name,web_2.name)        
+print(web_1.name,web_2.name) 
+
