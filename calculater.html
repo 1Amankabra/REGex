@@ -16,18 +16,21 @@
         color: cadetblue;
         border: solid black 2px;
       }
-      #btn{
+      #btn
+      {
         width: 100%;
         height: 40px;
         font-size: 30px;
       }
-      input[type="button"]{
+      input[type="button"]
+      {
         background-color: darkcyan;
         color: black;
         border: solid black 2px;
         width: 100%;
       }
-      input[type="text"]{
+      input[type="text"]
+      {
         background-color: aliceblue;
         border: solid black 2px;
         width: 100%;
@@ -35,12 +38,15 @@
     </style>
 
     <script>
-      function backspace(calc){
+      function backspace(calc)
+      {
         size = calc.display.value.length;
         calc.display.value = calc.display.value.substring(0,size-1);
       }
-      function calculate(calc){
-        if (calc.display.value.includes("!")){
+      function calculate(calc)
+      {
+        if (calc.display.value.includes("!"))
+        {
           size = calc.display.value.length;
           n = Number(calc.display.value.substring(0,size-1));
           f = 1;
@@ -49,7 +55,8 @@
            f = f*i;
           calc.display.v = f; 
         }
-        else if (calc.display.value.includes("%")){
+        else if (calc.display.value.includes("%"))
+        {
           size = calc.display.value.length;
           n = Number(calc.display.value.substring(0,size-1));
           calc.display.value = n/100;
@@ -86,11 +93,9 @@
               <input id="btn" type="button" value="c" Onclick="calc.display.value=' '">
             </td>
             <td>
-              <input id="btn" type="button" value="<-" Onclick="backspace(this.form)">
-            </td>
-            <td>
               <input id="btn" type="button" value="=" Onclick="calculate(this.form)">
             </td>
+            
           </tr>
 
           <tr>
@@ -109,9 +114,7 @@
             <td>
               <input id="btn" type="button" value="%" Onclick="calc.display.value+='%'">
             </td>
-            <td>
-              <input id="btn" type="button" value="cos" Onclick="calc.display.value='math.cos('">
-            </td>
+            
           </tr>
 
           <tr>
@@ -130,9 +133,7 @@
               <td>
                 <input id="btn" type="button" value="n!" Onclick="calc.display.value+='!'">
               </td>
-              <td>
-                <input id="btn" type="button" value="sin" Onclick="calc.display.value='math.sin('">
-              </td>
+              
           </tr>
 
           <tr>
@@ -151,52 +152,10 @@
               <td>
                 <input id="btn" type="button" value="/" Onclick="calc.display.value+='/'">
               </td>
-              <td>
-                <input id="btn" type="button" value="tan" Onclick="calc.display.value='math.tan('">
-              </td>
+              
           </tr>
 
-          <tr>
-            <td>
-              <input id="btn" type="button" value="E" Onclick="calc.display.value+='math.E'">
-            </td>
-            <td>
-              <input id="btn" type="button" value="pi" Onclick="calc.display.value+='math.PI'">
-            </td>
-            <td>
-              <input id="btn" type="button" value="^" Onclick="calc.display.value+='math.pow('">
-            </td>
-            <td>
-              <input id="btn" type="button" value="(" Onclick="calc.display.value+='('">
-            </td>
-            <td>
-              <input id="btn" type="button" value=")" Onclick="calc.display.value+=')'">
-            </td>
-            <td>
-              <input id="btn" type="button" value="log" Onclick="calc.display.value+='math.log('">
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <input id="btn" type="button" value="sqrt" Onclick="calc.display.value+='math.sqrt('">
-            </td>
-            <td>
-              <input id="btn" type="button" value="ln2" Onclick="calc.display.value+='math.LN2'">
-            </td>
-            <td>
-              <input id="btn" type="button" value="ln10" Onclick="calc.display.value+='math.log10'">
-            </td>
-            <td>
-              <input id="btn" type="button" value="12e" Onclick="calc.display.value+='math.LOG2E'">
-            </td>
-            <td>
-              <input id="btn" type="button" value="110e" Onclick="calc.display.value+='math.log10'">
-            </td>
-            <td>
-              <input id="btn" type="button" value="exp" Onclick="calc.display.value+='math.exp('">
-            </td>
-          </tr>
+          
         </table>
     </form> 
   </center>   
